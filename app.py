@@ -56,9 +56,9 @@ else:
         msg["From"] = EMAIL_USER
         msg["To"] = EMAIL_USER
         summary = week_df.groupby("category")["amount"].sum().to_string()
-        msg.set_content(f"Here is your weekly spending summary:
+        msg.set_content(f"""Here is your weekly spending summary:
 
-{summary}")
+{summary}""")
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
             smtp.login(EMAIL_USER, EMAIL_PASS)
             smtp.send_message(msg)
