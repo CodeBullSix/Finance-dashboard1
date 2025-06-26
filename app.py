@@ -95,7 +95,6 @@ if uploaded:
     df_new.to_csv("data/sample_transactions.csv", index=False)
     st.sidebar.success("Upload complete! Refresh to apply new data.")
 
-:
     st.session_state.logged_in = False
 
 # Simple login simulation
