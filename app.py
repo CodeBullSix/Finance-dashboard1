@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from datetime import datetime
+from streamlit.runtime.scriptrunner import rerun
 
 st.set_page_config(page_title="AI-Enhanced Financial Planner", layout="wide")
 st.title("🧠 Financial + Longevity Dashboard")
@@ -16,7 +17,7 @@ if not st.session_state.logged_in:
     if st.button("Login") and username:
         st.session_state.logged_in = True
         st.session_state.username = username
-        st.experimental_rerun()
+rerun()
     st.stop()
 
 # Load transaction data
