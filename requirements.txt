@@ -5,3 +5,9 @@ matplotlib
 openai
 flask
 plaid-python
+python-dotenv
+plotly
+yagmail
+tenacity          # for retry logic
+scikit-learn      # if AI models expand later
+tqdm              # for loading bars (if you want)
