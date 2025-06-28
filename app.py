@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from utils import generate_ai_budget_plan
 from generate_ai_budget_plan import generate_ai_budget_plan
 
 
