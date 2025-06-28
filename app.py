@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 from utils import generate_ai_budget_plan
+from generate_ai_budget_plan import generate_ai_budget_plan
+
 
 st.set_page_config(page_title="AI Finance Dashboard", layout="centered")
 st.title("💸 AI Finance Dashboard")
