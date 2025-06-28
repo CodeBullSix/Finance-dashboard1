@@ -2,7 +2,7 @@ streamlit
 requests
 pandas
 matplotlib
-openai
+openai>=1.0.0
 flask
 plaid-python
 python-dotenv
